@@ -1,0 +1,22 @@
+--- makecdfenv/makecdfenv/DESCRIPTION~	2012-10-02 04:43:08.000000000 +0200
++++ makecdfenv/makecdfenv/DESCRIPTION	2012-10-18 13:21:30.057046618 +0200
+@@ -8,7 +8,7 @@
+         <bmb@bmbolstad.com>
+ Maintainer: James W. MacDonald <jmacdon@med.umich.edu>
+ Depends: R (>= 2.6.0), methods
+-Imports: Biobase, affy, methods, stats, utils, zlibbioc
++Imports: Biobase, affy, methods, stats, utils,
+ Description: This package has two functions. One reads a Affymetrix
+         chip description file (CDF) and creates a hash table
+         environment containing the location/probe set membership
+--- makecdfenv/makecdfenv/NAMESPACE~	2012-10-02 01:28:55.000000000 +0200
++++ makecdfenv/makecdfenv/NAMESPACE	2012-10-18 13:21:35.800379751 +0200
+@@ -2,8 +2,6 @@
+ 
+ import(methods)
+ 
+-import(zlibbioc)
+-
+ importFrom(affy, cleancdfname)
+ 
+ importFrom(Biobase, createPackage, multiassign)
