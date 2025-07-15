@@ -30,7 +30,7 @@ that automatically loads that environment.
 
 %prep
 %setup -q -c -n %{packname}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 R CMD build %{packname}
