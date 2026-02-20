@@ -3,7 +3,7 @@
 Summary:	CDF Environment Maker
 Name:		R-%{packname}
 Version:	1.38.0
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Applications/Engineering
 Source0:	http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
