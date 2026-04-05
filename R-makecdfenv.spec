@@ -3,12 +3,11 @@
 Summary:	CDF Environment Maker
 Name:		R-%{packname}
 Version:	1.86.0
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Applications/Engineering
 Source0:	https://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
 # Source0-md5:	5250c45e35bf6a1fb3798686a2c2f33d
-Patch0:		bogus-deps.patch
 URL:		https://bioconductor.org/packages/release/bioc/html/makecdfenv.html
 BuildRequires:	R
 BuildRequires:	R-Biobase
@@ -30,7 +29,6 @@ that automatically loads that environment.
 
 %prep
 %setup -q -c -n %{packname}
-%patch -P0 -p1
 
 %build
 R CMD build %{packname}
